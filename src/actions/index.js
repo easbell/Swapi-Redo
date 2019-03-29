@@ -3,6 +3,11 @@ export const setVehicles = (vehicles) => ({
   vehicles
 })
 
+export const setPlanets = (planets) => ({
+  type: 'ADD_PLANETS',
+  planets
+})
+
 export const isLoading = (bool) => ({
   type: 'IS_LOADING',
   isLoading: bool
