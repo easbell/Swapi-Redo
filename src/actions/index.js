@@ -8,6 +8,11 @@ export const setPlanets = (planets) => ({
   planets
 })
 
+export const setPeople = (people) => ({
+  type: 'ADD_PEOPLE',
+  people
+})
+
 export const isLoading = (bool) => ({
   type: 'IS_LOADING',
   isLoading: bool

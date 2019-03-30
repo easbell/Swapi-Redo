@@ -7,7 +7,7 @@ export const fetchExtraPlanetInfo = (planetArray) => {
         const residents = planet.residents.map(async resident => {
           const response = await fetch(resident);
           if(!response.ok) {
-            throw Error(response.statusText)
+            throw Error(response.statusText);
           }
           const data = await response.json();
           return data.name
