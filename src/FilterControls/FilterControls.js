@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { selectCategory } from './actions'
+import { selectCategory } from '../actions';
+import './FilterControls.css'
 
 const FilterControls = (props) => {
   const handleSelection = (e) => {

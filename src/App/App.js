@@ -1,22 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchFilm } from './thunks/fetchFilm';
-import { fetchVehicles } from './thunks/fetchVehicles';
-import { fetchPlanets } from './thunks/planetThunks/fetchPlanets';
-import { fetchPeople } from './thunks/peopleThunks/fetchPeople';
-import FilterControls from './FilterControls';
+import { fetchFilm } from '../thunks/fetchFilm';
+import { fetchVehicles } from '../thunks/fetchVehicles';
+import { fetchPlanets } from '../thunks/planetThunks/fetchPlanets';
+import { fetchPeople } from '../thunks/peopleThunks/fetchPeople';
+import FilterControls from '../FilterControls/FilterControls';
+import CardContainer from '../CardContainer/CardContainer';
+import Scroll from '../Scroll/Scroll';
 import './App.css';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      randomFilm: {},
-      cardsSelected: [],
-      errorStatus: ''
-    }
-  }
-  
   async componentDidMount() {
     const random = this.getRandomNum()
     this.props.fetchFilm(`https://swapi.co/api/films/${random}`)
@@ -36,11 +29,10 @@ class App extends Component {
           <h1>SWApi Box</h1>
         </header>
         <div>
+          <Scroll />
           <FilterControls />
-          {/* <Splash 
-            randomFilm={randomFilm}
-          />
-          <CardContainer /> */}
+          <h3 className="category-header">{this.props.category}</h3>
+          <CardContainer /> 
         </div>
       </div>
     );
@@ -54,4 +46,8 @@ export const mapDispatchToProps = (dispatch) => ({
   fetchFilm: (url) => dispatch(fetchFilm(url))
 })
 
-export default connect(null, mapDispatchToProps)(App);
+export const mapStateToProps = (state) => ({
+  category: state.category
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

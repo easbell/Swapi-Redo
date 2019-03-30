@@ -1,0 +1,8 @@
+.card-container {
+  background-color: #8fc7d8;
+  opacity: 0.7;
+  width: 80%;
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  border-radius: 5px;
+}

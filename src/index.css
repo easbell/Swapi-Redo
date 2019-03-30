@@ -6,6 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('./utils/background.jpg');
+  background-position: 50% 15%;
 }
 
 code {

@@ -1,0 +1,29 @@
+.card {
+  margin: 13px;
+  color: #fff;
+  overflow-wrap: break-word;
+  max-width: 300px;
+  padding: 11px;
+  border-radius: 5px;
+  background-color: #52656b;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card button {
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 14px;
+  margin: 5px 33px;
+  background-color: #011e3f;
+  color: white;
+  border: 0;
+}
+
+.card button:hover {
+  background-color: #fff;
+  color: #011e3f;
+  cursor: pointer;
+}

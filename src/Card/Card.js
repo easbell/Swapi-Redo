@@ -13,11 +13,8 @@ const Card = ( {...card} ) => {
   return (
     <div className='card'>
       {mapProps()}
-      {/* <button onClick={toggleFavorite()}>Favorite</button> */}
     </div>
   )
 }
-
-// add a reducer/action for favoriting.
 
 export default Card;

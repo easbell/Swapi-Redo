@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  
+}
+
+.App-header {
+  justify-content: center;
+  font-size: 2rem;
+  color: #feda4a;
+}
+
+.category-header {
+  color: #feda4a;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+}
