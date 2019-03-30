@@ -13,6 +13,11 @@ export const setPeople = (people) => ({
   people
 })
 
+export const setFilm = (film) => ({
+  type: 'ADD_FILM',
+  film
+})
+
 export const isLoading = (bool) => ({
   type: 'IS_LOADING',
   isLoading: bool
@@ -21,4 +26,9 @@ export const isLoading = (bool) => ({
 export const hasError = (message) => ({
   type: 'HAS_ERROR',
   message
+})
+
+export const selectCategory = (category) => ({
+  type: 'SELECT_CATEGORY',
+  category
 })

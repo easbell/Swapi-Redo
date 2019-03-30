@@ -30,7 +30,7 @@ describe('fetchPeople', () => {
 
     const thunk = fetchPeople(mockUrl);
     await thunk(mockDispatch);
-    expect(mockDispatch).toHaveBeenCalledWith(fetchHomeWorld(mockPeople))
+    expect(mockDispatch).toHaveBeenCalledWith(fetchHomeWorld(mockPeople));
   });
 
   it('should dispatch isLoading if the response is ok', async () => {
