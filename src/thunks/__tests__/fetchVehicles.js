@@ -1,4 +1,4 @@
-import { fetchVehicles } from '../vehicleThunks/fetchVehicles';
+import { fetchVehicles } from '../fetchVehicles';
 import { isLoading, hasError, setVehicles } from "../../actions";
 import { cleanVehicles } from '../../utils/helpers';
 
