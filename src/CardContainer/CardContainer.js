@@ -3,9 +3,10 @@ import Card from '../Card/Card';
 import { connect } from 'react-redux';
 import './CardContainer.css';
 
-const CardContainer = (props) =>{
+export const CardContainer = (props) =>{
   const renderCards = () => {
     const { category } = props;
+    console.log(props)
     return props[category].map(card => {
       return <Card key={card.Name} {...card}/>
     })

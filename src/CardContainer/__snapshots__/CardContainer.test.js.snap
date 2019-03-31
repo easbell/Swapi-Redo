@@ -3,8 +3,44 @@
 exports[`CardContainer should match snapshot with all data passed in 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(CardContainer)
-    category="planets"
+  Symbol(enzyme.__unrendered__): <CardContainer
+    props={
+      Object {
+        "category": "planets",
+        "planets": Array [
+          Object {
+            "Climate": "temperate",
+            "Name": "Alderaan",
+            "Population": "2000000000",
+            "Terrain": "grasslands, mountains",
+          },
+          Object {
+            "Climate": "temperate, tropical",
+            "Name": "Yavin IV",
+            "Population": "1000",
+            "Terrain": "jungle, rainforests",
+          },
+          Object {
+            "Climate": "frozen",
+            "Name": "Hoth",
+            "Population": "unknown",
+            "Terrain": "tundra, ice caves, mountain ranges",
+          },
+          Object {
+            "Climate": "murky",
+            "Name": "Dagobah",
+            "Population": "unknown",
+            "Terrain": "swamp, jungles",
+          },
+          Object {
+            "Climate": "temperate",
+            "Name": "Bespin",
+            "Population": "6000000",
+            "Terrain": "gas giant",
+          },
+        ],
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -18,59 +54,27 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": undefined,
+      "className": "card-container",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
-        },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": null,
-        "_currentValue2": null,
-        "_threadCount": 0,
-      },
-    },
+    "rendered": null,
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": undefined,
+        "className": "card-container",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
-          },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": null,
-          "_currentValue2": null,
-          "_threadCount": 0,
-        },
-      },
+      "rendered": null,
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -96,6 +100,5 @@ ShallowWrapper {
       },
     },
   },
-  Symbol(enzyme.__childContext__): null,
 }
 `;

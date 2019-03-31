@@ -1,24 +1,39 @@
 import React from 'react';
-import CardContainer, { mapStateToProps } from './CardContainer';
+import { CardContainer, mapStateToProps } from './CardContainer';
 import Card from '../Card/Card';
 import { shallow } from 'enzyme';
-import { mockVehicles, mockPeople, mockPlanets, mockStateResult } from '../utils/mockData/mockData';
+import { mockVehicles, mockPeople, mockPlanets, mockStateResult, mockProps } from '../utils/mockData/mockData';
 
 describe('CardContainer', () => {
+  let props;
+  let wrapper;
+  beforeEach(() => {
+    props = {
+      planets: [{Name: "Alderaan", Terrain: "grasslands, mountains", Population: "2000000000", Climate: "temperate"}, {Name: "Yavin IV", Terrain: "jungle, rainforests", Population: "1000", Climate: "temperate, tropical"}, {Name: "Hoth", Terrain: "tundra, ice caves, mountain ranges", Population: "unknown", Climate: "frozen"}, {Name: "Dagobah", Terrain: "swamp, jungles", Population: "unknown", Climate: "murky"}, {Name: "Bespin", Terrain: "gas giant", Population: "6000000", Climate: "temperate"}],
+      category: 'planets'
+    }
+    wrapper = shallow(<CardContainer props={props}/>)
+  })
   it('should match snapshot with all data passed in', () => {
-    let wrapper = shallow(<CardContainer category={'planets'}/>)
-
     expect(wrapper).toMatchSnapshot();
   });
 
-  it.skip('should return 10 Card components', () => {
+  it.skip('should invoke renderCards on componentDidMount', () => {
+    const wrapper = shallow(<CardContainer props={props} />)
+    const instance = wrapper.instance();
+    jest.spyOn(instance, 'renderCards');
+    instance.componentDidMount();
+    expect(instance.renderCards).toHaveBeenCalled();
+  });
+
+  it('should have props for the category', () => {
     const props = {
       planets: mockPlanets,
       category: "planets"
     }
 
-    let wrapper = shallow(<CardContainer props={props}/>) 
-    expect(wrapper.instance().find('div')).to.have.length(1)
+    shallow(<CardContainer props={props}/>) 
+    expect(props).toEqual(mockProps);
   });
 
   describe('mapStateToProps', () => {
