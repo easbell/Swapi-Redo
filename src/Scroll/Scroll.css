@@ -10,9 +10,9 @@
 .star-wars {
   overflow: hidden;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   position: relative;
-  height: 300px;
   color: #feda4a;
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 300%;
@@ -38,4 +38,25 @@
     top: -6000px;
     transform: rotateX(25deg) translateZ(-2500px);
   }
+}
+
+.enter-app {
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 14px;
+  margin: 5px 33px;
+  background-color: #545558;
+  color: white;
+  border: 0;
+  width: 1800px;
+  height: 107px;
+  position: relative;
+  top: 951px;
+  left: 750px;
+}
+
+.enter-app:hover {
+  background-color: #fff;
+  color: #545558;
+  cursor: pointer;
 }

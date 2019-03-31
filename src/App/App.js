@@ -10,6 +10,13 @@ import Scroll from '../Scroll/Scroll';
 import './App.css';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      pageStatus: 'scroll'
+    }
+  }
+
   async componentDidMount() {
     const random = this.getRandomNum()
     this.props.fetchFilm(`https://swapi.co/api/films/${random}`)
@@ -22,20 +29,32 @@ class App extends Component {
     return Math.floor(Math.random() * (7 - 1) + 1); 
   }
 
+  enterApp = () => {
+    this.setState({pageStatus: 'home'})
+  }
+
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1>SWApi Box</h1>
-        </header>
-        <div>
-          <Scroll />
-          <FilterControls />
-          <h3 className="category-header">{this.props.category}</h3>
-          <CardContainer /> 
+    switch(this.state.pageStatus) {
+      case('home'):
+      return (
+        <div className="App">
+          <header className="App-header">
+            <h1>SWApi Box</h1>
+          </header>
+          <div>
+            <FilterControls />
+            <h3 className="category-header">{this.props.category}</h3>
+            <CardContainer /> 
+          </div>
         </div>
-      </div>
-    );
+      )
+    default: 
+      return (
+        <div>
+          <Scroll enterApp={this.enterApp}/>
+        </div>
+      )
+      }
   }
 }
 
