@@ -56,7 +56,7 @@ export class App extends Component {
       )
       }
   }
-}
+} 
 
 export const mapDispatchToProps = (dispatch) => ({
   fetchVehicles: (url) => dispatch(fetchVehicles(url)),
