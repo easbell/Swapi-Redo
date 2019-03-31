@@ -1,29 +1,37 @@
 import React from 'react';
 import { FilterControls, mapDispatchToProps} from './FilterControls';
 import { mount, shallow } from 'enzyme';
-import { connect } from 'react-redux';
+import { selectCategory } from '../actions';
 
 describe('FilterControls', () => {
   let wrapper;
-  let mockSelectCategory;
-  let mockHandleSelection;
+  let mockFn;
 
   beforeEach(() => {
-    mockSelectCategory = jest.fn();
-    mockHandleSelection = jest.fn();
-    wrapper = mount(<FilterControls selectCategory={mockSelectCategory}/>)
+    mockFn = jest.fn();
+    wrapper = mount(<FilterControls selectCategory={mockFn}/>)
   });
 
   it('should match snapshot with all data passed in', () => {
-    wrapper = shallow(<FilterControls selectCategory={mockSelectCategory}/>)
+    wrapper = shallow(<FilterControls selectCategory={mockFn}/>)
     expect(wrapper).toMatchSnapshot();
   });
 
-  it.skip('should invoke handleSelection with proper argument when button is clicked', () => {
+  it('should invoke handleSelection with proper argument when button is clicked', () => {
     const mockedEvent = { target: {} }
     wrapper.find('.people').simulate('click', mockedEvent)
-    expect(mockHandleSelection).toHaveBeenCalled()
+    expect(mockFn).toHaveBeenCalled()
   });
 
+  describe('mapDispatchToProps', () => {
+    it('calls dispatch with a selectCategory action', async () => {
+      const dispatch = jest.fn();
+      const mockCategory = 'planets';
+      const actionToDispatch = await selectCategory(mockCategory)
 
-})
+      const mappedProps = mapDispatchToProps(dispatch)
+      mappedProps.selectCategory(mockCategory)
+      expect(dispatch).toHaveBeenCalledWith(actionToDispatch);
+    });
+  });
+});
