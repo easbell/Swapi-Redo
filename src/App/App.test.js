@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { App, mapDispatchToProps, mapStateToProps } from './App';
 import { setVehicles, setFilm, setPlanets, setPeople } from '../actions';
 import { fetchFilm } from '../thunks/fetchFilm';
