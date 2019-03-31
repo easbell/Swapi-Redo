@@ -27,6 +27,32 @@ describe('actions', () => {
     });
   });
 
+  describe('setPeople', () => {
+    it('should return a type of ADD_PEOPLE with the people array', () => {
+      const mockPeople = ['person', 'person']      
+      const expected = {
+        type: 'ADD_PEOPLE',
+        people: mockPeople
+      }
+
+      const result = actions.setPeople(mockPeople);
+      expect(result).toEqual(expected)
+    });
+  });
+
+  describe('setFilm', () => {
+    it('should return a type of ADD_FILM with the film object', () => {
+      const mockFilm = {title: 'title', releaseDate: '1/2/3'}     
+      const expected = {
+        type: 'ADD_FILM',
+        film: mockFilm
+      }
+
+      const result = actions.setFilm(mockFilm);
+      expect(result).toEqual(expected)
+    });
+  });
+
   describe('isLoading', () => {
     it('should return a type of IS_LOADING with a boolean', () => {   
       const expected = {

@@ -9,7 +9,7 @@ import CardContainer from '../CardContainer/CardContainer';
 import Scroll from '../Scroll/Scroll';
 import './App.css';
 
-class App extends Component {
+export class App extends Component {
   constructor() {
     super();
     this.state = {
