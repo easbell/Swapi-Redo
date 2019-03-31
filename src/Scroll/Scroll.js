@@ -2,8 +2,7 @@ import React from 'react';
 import './Scroll.css';
 import { connect } from 'react-redux';
 
-const Scroll = (props) => {
-
+export const Scroll = (props) => {
   const handleClick = (e) => {
     e.preventDefault();
     props.enterApp();

@@ -1,0 +1,320 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Scroll should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Scroll
+    film={
+      Object {
+        "openingCrawl": "War! The Republic is crumblingunder attacks by the ruthlessSith Lord, Count Dooku.There are heroes on both sides.Evil is everywhere.In a stunning move, thefiendish droid leader, GeneralGrievous, has swept into theRepublic capital and kidnappedChancellor Palpatine, leader ofthe Galactic Senate.As the Separatist Droid Armyattempts to flee the besiegedcapital with their valuablehostage, two Jedi Knights lead adesperate mission to rescue thecaptive Chancellor....",
+        "releaseDate": "2005-05-19",
+        "title": "Revenge of the Sith",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="star-wars"
+      >
+        <button
+          className="enter-app"
+          onClick={[Function]}
+        >
+          Enter App
+        </button>
+        <div
+          className="crawl"
+        >
+          <p>
+            War! The Republic is crumblingunder attacks by the ruthlessSith Lord, Count Dooku.There are heroes on both sides.Evil is everywhere.In a stunning move, thefiendish droid leader, GeneralGrievous, has swept into theRepublic capital and kidnappedChancellor Palpatine, leader ofthe Galactic Senate.As the Separatist Droid Armyattempts to flee the besiegedcapital with their valuablehostage, two Jedi Knights lead adesperate mission to rescue thecaptive Chancellor....
+          </p>
+          <p>
+            Revenge of the Sith
+          </p>
+          <p>
+            2005-05-19
+          </p>
+        </div>
+      </div>,
+      "className": "fade",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <button
+            className="enter-app"
+            onClick={[Function]}
+          >
+            Enter App
+          </button>,
+          <div
+            className="crawl"
+          >
+            <p>
+              War! The Republic is crumblingunder attacks by the ruthlessSith Lord, Count Dooku.There are heroes on both sides.Evil is everywhere.In a stunning move, thefiendish droid leader, GeneralGrievous, has swept into theRepublic capital and kidnappedChancellor Palpatine, leader ofthe Galactic Senate.As the Separatist Droid Armyattempts to flee the besiegedcapital with their valuablehostage, two Jedi Knights lead adesperate mission to rescue thecaptive Chancellor....
+            </p>
+            <p>
+              Revenge of the Sith
+            </p>
+            <p>
+              2005-05-19
+            </p>
+          </div>,
+        ],
+        "className": "star-wars",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Enter App",
+            "className": "enter-app",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Enter App",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                War! The Republic is crumblingunder attacks by the ruthlessSith Lord, Count Dooku.There are heroes on both sides.Evil is everywhere.In a stunning move, thefiendish droid leader, GeneralGrievous, has swept into theRepublic capital and kidnappedChancellor Palpatine, leader ofthe Galactic Senate.As the Separatist Droid Armyattempts to flee the besiegedcapital with their valuablehostage, two Jedi Knights lead adesperate mission to rescue thecaptive Chancellor....
+              </p>,
+              <p>
+                Revenge of the Sith
+              </p>,
+              <p>
+                2005-05-19
+              </p>,
+            ],
+            "className": "crawl",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "War! The Republic is crumblingunder attacks by the ruthlessSith Lord, Count Dooku.There are heroes on both sides.Evil is everywhere.In a stunning move, thefiendish droid leader, GeneralGrievous, has swept into theRepublic capital and kidnappedChancellor Palpatine, leader ofthe Galactic Senate.As the Separatist Droid Armyattempts to flee the besiegedcapital with their valuablehostage, two Jedi Knights lead adesperate mission to rescue thecaptive Chancellor....",
+              },
+              "ref": null,
+              "rendered": "War! The Republic is crumblingunder attacks by the ruthlessSith Lord, Count Dooku.There are heroes on both sides.Evil is everywhere.In a stunning move, thefiendish droid leader, GeneralGrievous, has swept into theRepublic capital and kidnappedChancellor Palpatine, leader ofthe Galactic Senate.As the Separatist Droid Armyattempts to flee the besiegedcapital with their valuablehostage, two Jedi Knights lead adesperate mission to rescue thecaptive Chancellor....",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Revenge of the Sith",
+              },
+              "ref": null,
+              "rendered": "Revenge of the Sith",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "2005-05-19",
+              },
+              "ref": null,
+              "rendered": "2005-05-19",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="star-wars"
+        >
+          <button
+            className="enter-app"
+            onClick={[Function]}
+          >
+            Enter App
+          </button>
+          <div
+            className="crawl"
+          >
+            <p>
+              War! The Republic is crumblingunder attacks by the ruthlessSith Lord, Count Dooku.There are heroes on both sides.Evil is everywhere.In a stunning move, thefiendish droid leader, GeneralGrievous, has swept into theRepublic capital and kidnappedChancellor Palpatine, leader ofthe Galactic Senate.As the Separatist Droid Armyattempts to flee the besiegedcapital with their valuablehostage, two Jedi Knights lead adesperate mission to rescue thecaptive Chancellor....
+            </p>
+            <p>
+              Revenge of the Sith
+            </p>
+            <p>
+              2005-05-19
+            </p>
+          </div>
+        </div>,
+        "className": "fade",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              className="enter-app"
+              onClick={[Function]}
+            >
+              Enter App
+            </button>,
+            <div
+              className="crawl"
+            >
+              <p>
+                War! The Republic is crumblingunder attacks by the ruthlessSith Lord, Count Dooku.There are heroes on both sides.Evil is everywhere.In a stunning move, thefiendish droid leader, GeneralGrievous, has swept into theRepublic capital and kidnappedChancellor Palpatine, leader ofthe Galactic Senate.As the Separatist Droid Armyattempts to flee the besiegedcapital with their valuablehostage, two Jedi Knights lead adesperate mission to rescue thecaptive Chancellor....
+              </p>
+              <p>
+                Revenge of the Sith
+              </p>
+              <p>
+                2005-05-19
+              </p>
+            </div>,
+          ],
+          "className": "star-wars",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Enter App",
+              "className": "enter-app",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Enter App",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  War! The Republic is crumblingunder attacks by the ruthlessSith Lord, Count Dooku.There are heroes on both sides.Evil is everywhere.In a stunning move, thefiendish droid leader, GeneralGrievous, has swept into theRepublic capital and kidnappedChancellor Palpatine, leader ofthe Galactic Senate.As the Separatist Droid Armyattempts to flee the besiegedcapital with their valuablehostage, two Jedi Knights lead adesperate mission to rescue thecaptive Chancellor....
+                </p>,
+                <p>
+                  Revenge of the Sith
+                </p>,
+                <p>
+                  2005-05-19
+                </p>,
+              ],
+              "className": "crawl",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "War! The Republic is crumblingunder attacks by the ruthlessSith Lord, Count Dooku.There are heroes on both sides.Evil is everywhere.In a stunning move, thefiendish droid leader, GeneralGrievous, has swept into theRepublic capital and kidnappedChancellor Palpatine, leader ofthe Galactic Senate.As the Separatist Droid Armyattempts to flee the besiegedcapital with their valuablehostage, two Jedi Knights lead adesperate mission to rescue thecaptive Chancellor....",
+                },
+                "ref": null,
+                "rendered": "War! The Republic is crumblingunder attacks by the ruthlessSith Lord, Count Dooku.There are heroes on both sides.Evil is everywhere.In a stunning move, thefiendish droid leader, GeneralGrievous, has swept into theRepublic capital and kidnappedChancellor Palpatine, leader ofthe Galactic Senate.As the Separatist Droid Armyattempts to flee the besiegedcapital with their valuablehostage, two Jedi Knights lead adesperate mission to rescue thecaptive Chancellor....",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Revenge of the Sith",
+                },
+                "ref": null,
+                "rendered": "Revenge of the Sith",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "2005-05-19",
+                },
+                "ref": null,
+                "rendered": "2005-05-19",
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

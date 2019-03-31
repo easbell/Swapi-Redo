@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchFilm } from '../thunks/fetchFilm';
 import { fetchVehicles } from '../thunks/fetchVehicles';
-import { fetchPlanets } from '../thunks/planetThunks/fetchPlanets';
+import { fetchPlanets } from '../thunks/fetchPlanets';
 import { fetchPeople } from '../thunks/peopleThunks/fetchPeople';
 import FilterControls from '../FilterControls/FilterControls';
 import CardContainer from '../CardContainer/CardContainer';

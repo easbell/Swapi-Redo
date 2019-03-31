@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import './CardContainer.css';
 
 const CardContainer = (props) =>{
-
   const renderCards = () => {
     const { category } = props;
     return props[category].map(card => {

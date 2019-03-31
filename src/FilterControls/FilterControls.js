@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { selectCategory } from '../actions';
 import './FilterControls.css'
 
-const FilterControls = (props) => {
+export const FilterControls = (props) => {
   const handleSelection = (e) => {
     props.selectCategory(e.target.className);
   }
@@ -15,8 +15,6 @@ const FilterControls = (props) => {
       <button onClick={handleSelection} className='vehicles'>Vehicles</button>
     </div>
   )
-
-  
 }
 
 export const mapDispatchToProps = (dispatch) => ({

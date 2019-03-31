@@ -1,5 +1,5 @@
-import { isLoading, hasError, setPlanets } from '../../actions';
-import { cleanPlanets } from '../../utils/helpers';
+import { isLoading, hasError, setPlanets } from '../actions';
+import { cleanPlanets } from '../utils/helpers';
 
 export const fetchPlanets = (url) => {
   return async (dispatch) => {
@@ -11,6 +11,7 @@ export const fetchPlanets = (url) => {
       }
       const data = await response.json();
       const cleanedPlanets = await cleanPlanets(data.results)
+      console.log(cleanedPlanets)
       dispatch(isLoading(false))
       dispatch(setPlanets(cleanedPlanets))
     } catch(error) {

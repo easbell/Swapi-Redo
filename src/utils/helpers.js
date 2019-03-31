@@ -5,8 +5,8 @@ export const cleanVehicles = (data) => {
 }
 
 export const cleanPlanets = (planetArray) => {
-  const unresolvedPromises = planetArray.map(planet => {
+  const planets = planetArray.map(planet => {
     return {Name: planet.name, Terrain: planet.terrain, Population: planet.population, Climate: planet.climate}
   })
-  return Promise.all(unresolvedPromises)
+  return planets
 }

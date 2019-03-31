@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { App, mapDispatchToProps, mapStateToProps } from './App';
-import { setVehicles } from '../actions';
-import fetchFilm from '../thunks/fetchFilm';
-import {shallow } from 'enzyme';
-
-jest.mock('../thunks/fetchFilm');
+import { setVehicles, setFilm, setPlanets, setPeople } from '../actions';
+import { fetchFilm } from '../thunks/fetchFilm';
+import { fetchVehicles } from '../thunks/fetchVehicles';
+import { fetchPlanets } from '../thunks/fetchPlanets';
+import { fetchPeople } from '../thunks/peopleThunks/fetchPeople';
+import { shallow } from 'enzyme';
 
 describe('App', () => {
   let wrapper;
-  let mockFn;
-  let mockUrl;
 
   beforeEach(() => {
     wrapper = shallow(
@@ -22,31 +21,38 @@ describe('App', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it.skip('should have default state', () => {
-    expect(wrapper.state()).toEqual({
-      pageStatus: 'scroll'
-    });
-  });
+  it('matches snapshot with state', () => {
+    wrapper.setState({pageStatus: 'home'});
+    expect(wrapper).toMatchSnapshot();
+  })
 
-  it.skip('calls fetchFilm when mounted', () => {
-    const mockFn = jest.fn();
-    const wrapper = shallow(<App fetchFilm={mockFn}/>);
-    const instance = wrapper.instance();
-    jest.spyOn(instance, 'fetchFilm');
-
-    instance().componentDidMount();
-    expect(mockFn).toHaveBeenCalled();
+  it('should have default state', () => {
+    expect(wrapper.state('pageStatus')).toEqual('scroll');
   });
 
   describe('componentDidMount', () => {
-    it.skip('should call fetchFilm when mounted', () => {
+    it('should call fetch Thunks when mounted', () => {
       const mockFn = jest.fn();
-      const wrapper = shallow(<App fetchFilm={mockFn}/>);
+      const wrapper = shallow(
+        <App 
+          fetchFilm={mockFn} 
+          fetchVehicles={mockFn}
+          fetchPlanets={mockFn}
+          fetchPeople={mockFn}
+        />);
       const instance = wrapper.instance();
       instance.componentDidMount();
 
-      expect(wrapper.instance().fetchFilm).toHaveBeenCalled();
-      mockFn.mockClear();
+      expect(mockFn).toHaveBeenCalled();
+    });
+  });
+
+  describe('enterApp', () => {
+    it('should set state when enterApp is invoked', () => {
+      wrapper.setState({pageStatus: 'scroll'});
+      wrapper.instance().enterApp();
+
+      expect(wrapper.state('pageStatus')).toEqual('home');
     });
   });
 
@@ -67,12 +73,44 @@ describe('App', () => {
   });
 
   describe('mapDispatchToProps', () => {
-    it.skip('calls dispatch with a fetchFilm action', () => {
+    it('calls dispatch with a fetchFilm action', async () => {
       const dispatch = jest.fn();
-
-      mapDispatchToProps(dispatch).fetchFilm();
-      expect(dispatch.mock.calls[0][0]).toEqual({ type: 'ADD_FILM' })
+      const mockUrl = 'www.website.com';
+      const mockThunk = await fetchFilm(mockUrl);
+      const actionToDispatch = setFilm(mockThunk)
+      
+      mapDispatchToProps(dispatch(setFilm(mockThunk)))
+      expect(dispatch).toHaveBeenCalledWith(actionToDispatch);
     });
   });
 
+  it('calls dispatch with a fetchVehicles action', async () => {
+    const dispatch = jest.fn();
+    const mockUrl = 'www.website.com';
+    const mockThunk = await fetchVehicles(mockUrl);
+    const actionToDispatch = setVehicles(mockThunk)
+    
+    mapDispatchToProps(dispatch(setVehicles(mockThunk)))
+    expect(dispatch).toHaveBeenCalledWith(actionToDispatch);
+  });
+
+  it('calls dispatch with a fetchPlanets action', async () => {
+    const dispatch = jest.fn();
+    const mockUrl = 'www.website.com';
+    const mockThunk = await fetchPlanets(mockUrl);
+    const actionToDispatch = setPlanets(mockThunk)
+    
+    mapDispatchToProps(dispatch(setPlanets(mockThunk)))
+    expect(dispatch).toHaveBeenCalledWith(actionToDispatch);
+  });
+
+  it('calls dispatch with a fetchPeople action', async () => {
+    const dispatch = jest.fn();
+    const mockUrl = 'www.website.com';
+    const mockThunk = await fetchPeople(mockUrl);
+    const actionToDispatch = setPeople(mockThunk)
+    
+    mapDispatchToProps(dispatch(setPeople(mockThunk)))
+    expect(dispatch).toHaveBeenCalledWith(actionToDispatch);
+  });
 });

@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterControls should match snapshot with all data passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FilterControls
+    selectCategory={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <button
+          className="people"
+          onClick={[Function]}
+        >
+          People
+        </button>,
+        <button
+          className="planets"
+          onClick={[Function]}
+        >
+          Planets
+        </button>,
+        <button
+          className="vehicles"
+          onClick={[Function]}
+        >
+          Vehicles
+        </button>,
+      ],
+      "className": "filter",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "People",
+          "className": "people",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "People",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Planets",
+          "className": "planets",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Planets",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Vehicles",
+          "className": "vehicles",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Vehicles",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <button
+            className="people"
+            onClick={[Function]}
+          >
+            People
+          </button>,
+          <button
+            className="planets"
+            onClick={[Function]}
+          >
+            Planets
+          </button>,
+          <button
+            className="vehicles"
+            onClick={[Function]}
+          >
+            Vehicles
+          </button>,
+        ],
+        "className": "filter",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "People",
+            "className": "people",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "People",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Planets",
+            "className": "planets",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Planets",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Vehicles",
+            "className": "vehicles",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Vehicles",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

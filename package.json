@@ -3,7 +3,10 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
-      "!**/serviceWorker.js"
+      "!**/serviceWorker.js",
+      "!**/index.js",
+      "!**/mockData.js",
+      "!**/mockPeopleData.js"
     ]
   },
   "version": "0.1.0",
