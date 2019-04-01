@@ -29,12 +29,12 @@ ShallowWrapper {
       "children": <div
         className="star-wars"
       >
-        <button
+        <Link
           className="enter-app"
-          onClick={[Function]}
+          to="/main"
         >
           Enter App
-        </button>
+        </Link>
         <div
           className="crawl"
         >
@@ -58,12 +58,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <button
+          <Link
             className="enter-app"
-            onClick={[Function]}
+            to="/main"
           >
             Enter App
-          </button>,
+          </Link>,
           <div
             className="crawl"
           >
@@ -85,15 +85,15 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": "Enter App",
             "className": "enter-app",
-            "onClick": [Function],
+            "to": "/main",
           },
           "ref": null,
           "rendered": "Enter App",
-          "type": "button",
+          "type": [Function],
         },
         Object {
           "instance": null,
@@ -165,12 +165,12 @@ ShallowWrapper {
         "children": <div
           className="star-wars"
         >
-          <button
+          <Link
             className="enter-app"
-            onClick={[Function]}
+            to="/main"
           >
             Enter App
-          </button>
+          </Link>
           <div
             className="crawl"
           >
@@ -194,12 +194,12 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <button
+            <Link
               className="enter-app"
-              onClick={[Function]}
+              to="/main"
             >
               Enter App
-            </button>,
+            </Link>,
             <div
               className="crawl"
             >
@@ -221,15 +221,15 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "children": "Enter App",
               "className": "enter-app",
-              "onClick": [Function],
+              "to": "/main",
             },
             "ref": null,
             "rendered": "Enter App",
-            "type": "button",
+            "type": [Function],
           },
           Object {
             "instance": null,

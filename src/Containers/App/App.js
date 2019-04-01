@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchFilm } from '../thunks/fetchFilm';
-import { fetchVehicles } from '../thunks/fetchVehicles';
-import { fetchPlanets } from '../thunks/fetchPlanets';
-import { fetchPeople } from '../thunks/peopleThunks/fetchPeople';
+import { fetchFilm } from '../../thunks/fetchFilm';
+import { fetchVehicles } from '../../thunks/fetchVehicles';
+import { fetchPlanets } from '../../thunks/fetchPlanets';
+import { fetchPeople } from '../../thunks/peopleThunks/fetchPeople';
 import FilterControls from '../FilterControls/FilterControls';
 import CardContainer from '../CardContainer/CardContainer';
 import Scroll from '../Scroll/Scroll';
+import { Route } from 'react-router-dom';
 import './App.css';
 
 export class App extends Component {
@@ -18,11 +19,12 @@ export class App extends Component {
   }
 
   async componentDidMount() {
+    const { fetchFilm, fetchVehicles, fetchPlanets, fetchPeople } = this.props;
     const random = this.getRandomNum()
-    this.props.fetchFilm(`https://swapi.co/api/films/${random}`)
-    this.props.fetchVehicles(`https://swapi.co/api/vehicles`)
-    this.props.fetchPlanets(`https://swapi.co/api/planets`)
-    this.props.fetchPeople(`https://swapi.co/api/people`)
+    fetchFilm(`https://swapi.co/api/films/${random}`)
+    fetchVehicles(`https://swapi.co/api/vehicles`)
+    fetchPlanets(`https://swapi.co/api/planets`)
+    fetchPeople(`https://swapi.co/api/people`)
   }
 
   getRandomNum = () => {
@@ -34,27 +36,21 @@ export class App extends Component {
   }
 
   render() {
-    switch(this.state.pageStatus) {
-      case('home'):
-      return (
-        <div className="App">
-          <header className="App-header">
-            <h1>SWApi Box</h1>
-          </header>
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1>SWApi Box</h1>
+        </header>
+        <Route exact path="/" component={Scroll}/>
+        <Route exact path='/main' render={() => (
           <div>
             <FilterControls />
             <h3 className="category-header">{this.props.category}</h3>
             <CardContainer /> 
           </div>
-        </div>
-      )
-    default: 
-      return (
-        <div>
-          <Scroll enterApp={this.enterApp}/>
-        </div>
-      )
-      }
+        )} />
+      </div>
+    )
   }
 } 
 

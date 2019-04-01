@@ -18,22 +18,80 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Connect(Scroll)
-        enterApp={[Function]}
-      />,
+      "children": Array [
+        <header
+          className="App-header"
+        >
+          <h1>
+            SWApi Box
+          </h1>
+        </header>,
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/"
+        />,
+        <Route
+          exact={true}
+          path="/main"
+          render={[Function]}
+        />,
+      ],
+      "className": "App",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "enterApp": [Function],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <h1>
+            SWApi Box
+          </h1>,
+          "className": "App-header",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "SWApi Box",
+          },
+          "ref": null,
+          "rendered": "SWApi Box",
+          "type": "h1",
+        },
+        "type": "header",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "exact": true,
+          "path": "/",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "exact": true,
+          "path": "/main",
+          "render": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -42,22 +100,80 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <Connect(Scroll)
-          enterApp={[Function]}
-        />,
+        "children": Array [
+          <header
+            className="App-header"
+          >
+            <h1>
+              SWApi Box
+            </h1>
+          </header>,
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/"
+          />,
+          <Route
+            exact={true}
+            path="/main"
+            render={[Function]}
+          />,
+        ],
+        "className": "App",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "enterApp": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1>
+              SWApi Box
+            </h1>,
+            "className": "App-header",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "SWApi Box",
+            },
+            "ref": null,
+            "rendered": "SWApi Box",
+            "type": "h1",
+          },
+          "type": "header",
         },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "exact": true,
+            "path": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "exact": true,
+            "path": "/main",
+            "render": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": "div",
     },
   ],
@@ -114,13 +230,16 @@ ShallowWrapper {
             SWApi Box
           </h1>
         </header>,
-        <div>
-          <Connect(FilterControls) />
-          <h3
-            className="category-header"
-          />
-          <Connect(CardContainer) />
-        </div>,
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/"
+        />,
+        <Route
+          exact={true}
+          path="/main"
+          render={[Function]}
+        />,
       ],
       "className": "App",
     },
@@ -153,50 +272,28 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
-          "children": Array [
-            <Connect(FilterControls) />,
-            <h3
-              className="category-header"
-            />,
-            <Connect(CardContainer) />,
-          ],
+          "component": [Function],
+          "exact": true,
+          "path": "/",
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": undefined,
-              "className": "category-header",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "h3",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": "div",
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "exact": true,
+          "path": "/main",
+          "render": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
     ],
     "type": "div",
@@ -215,13 +312,16 @@ ShallowWrapper {
               SWApi Box
             </h1>
           </header>,
-          <div>
-            <Connect(FilterControls) />
-            <h3
-              className="category-header"
-            />
-            <Connect(CardContainer) />
-          </div>,
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/"
+          />,
+          <Route
+            exact={true}
+            path="/main"
+            render={[Function]}
+          />,
         ],
         "className": "App",
       },
@@ -254,50 +354,28 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
-            "children": Array [
-              <Connect(FilterControls) />,
-              <h3
-                className="category-header"
-              />,
-              <Connect(CardContainer) />,
-            ],
+            "component": [Function],
+            "exact": true,
+            "path": "/",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": undefined,
-                "className": "category-header",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "h3",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": "div",
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "exact": true,
+            "path": "/main",
+            "render": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
       ],
       "type": "div",

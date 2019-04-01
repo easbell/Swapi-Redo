@@ -1,6 +1,5 @@
 import React from 'react';
 import { CardContainer, mapStateToProps } from './CardContainer';
-import Card from '../Card/Card';
 import { shallow } from 'enzyme';
 import { mockVehicles, mockPeople, mockPlanets, mockStateResult, mockProps } from '../utils/mockData/mockData';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { selectCategory } from '../actions';
+import { selectCategory } from '../../actions';
 import './FilterControls.css'
 
 export const FilterControls = (props) => {

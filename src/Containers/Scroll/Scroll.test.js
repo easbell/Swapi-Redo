@@ -19,13 +19,4 @@ describe('Scroll', () => {
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
-
-  it('should fire enterApp when button is clicked', () => {
-    const mockFn = jest.fn();
-    wrapper = shallow(<Scroll film={props.film} enterApp={mockFn}/>)
-    const mockedEvent = { target: {}, preventDefault: () => {}}
-    wrapper.find('.enter-app').simulate('click', mockedEvent)
-
-    expect(mockFn).toHaveBeenCalled();
-  });
 })

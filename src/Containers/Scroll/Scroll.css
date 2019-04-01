@@ -18,8 +18,8 @@
   font-size: 300%;
   font-weight: 600;
   letter-spacing: 6px;
-  line-height: 150%;
-  perspective: 200px;
+  line-height: 140%;
+  perspective: 400px;
   text-align: justify;
 }
 
@@ -42,17 +42,19 @@
 
 .enter-app {
   border-radius: 5px;
-  font-size: 20px;
-  padding: 14px;
+  font-size: 18px;
+  padding: 9px;
   margin: 5px 33px;
+  padding-top: 36px;
   background-color: #545558;
   color: white;
   border: 0;
   width: 1800px;
   height: 107px;
+  text-decoration: none;
   position: relative;
-  top: 951px;
-  left: 750px;
+  top: 50px;
+  left: 50px;
 }
 
 .enter-app:hover {
