@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardContainer, mapStateToProps } from './CardContainer';
 import { shallow } from 'enzyme';
-import { mockVehicles, mockPeople, mockPlanets, mockStateResult, mockProps } from '../utils/mockData/mockData';
+import { mockVehicles, mockPeople, mockPlanets, mockStateResult, mockProps } from '../../utils/mockData/mockData';
 
 describe('CardContainer', () => {
   let props;

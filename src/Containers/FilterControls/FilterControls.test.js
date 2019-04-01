@@ -1,7 +1,7 @@
 import React from 'react';
 import { FilterControls, mapDispatchToProps} from './FilterControls';
 import { mount, shallow } from 'enzyme';
-import { selectCategory } from '../actions';
+import { selectCategory } from '../../actions';
 
 describe('FilterControls', () => {
   let wrapper;

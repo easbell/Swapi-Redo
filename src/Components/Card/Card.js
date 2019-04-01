@@ -13,6 +13,7 @@ const Card = ( {...card} ) => {
   return (
     <div className='card'>
       {mapProps()}
+      <button>Favorite</button>
     </div>
   )
 }

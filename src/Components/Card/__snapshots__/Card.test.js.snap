@@ -30,18 +30,23 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <p>
-          cardInfo
-          : 
-          Object {
-            "card": Object {
-              "Homeworld": "Tatooine",
-              "Name": "Luke Skywalker",
-              "Population": "200000",
-              "Species": "Human",
-            },
-          }
-        </p>,
+        Array [
+          <p>
+            cardInfo
+            : 
+            Object {
+              "card": Object {
+                "Homeworld": "Tatooine",
+                "Name": "Luke Skywalker",
+                "Population": "200000",
+                "Species": "Human",
+              },
+            }
+          </p>,
+        ],
+        <button>
+          Favorite
+        </button>,
       ],
       "className": "card",
     },
@@ -80,6 +85,17 @@ ShallowWrapper {
         ],
         "type": "p",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Favorite",
+        },
+        "ref": null,
+        "rendered": "Favorite",
+        "type": "button",
+      },
     ],
     "type": "div",
   },
@@ -90,18 +106,23 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <p>
-            cardInfo
-            : 
-            Object {
-              "card": Object {
-                "Homeworld": "Tatooine",
-                "Name": "Luke Skywalker",
-                "Population": "200000",
-                "Species": "Human",
-              },
-            }
-          </p>,
+          Array [
+            <p>
+              cardInfo
+              : 
+              Object {
+                "card": Object {
+                  "Homeworld": "Tatooine",
+                  "Name": "Luke Skywalker",
+                  "Population": "200000",
+                  "Species": "Human",
+                },
+              }
+            </p>,
+          ],
+          <button>
+            Favorite
+          </button>,
         ],
         "className": "card",
       },
@@ -139,6 +160,17 @@ ShallowWrapper {
             },
           ],
           "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Favorite",
+          },
+          "ref": null,
+          "rendered": "Favorite",
+          "type": "button",
         },
       ],
       "type": "div",

@@ -10,3 +10,11 @@ export const cleanPlanets = (planetArray) => {
   })
   return planets
 }
+
+export const combineInfo = (homeworlds, species) => {
+  let allPeople = [];
+  homeworlds.forEach((person, i) => {
+    allPeople.push({...person, ...species[i]})
+  });
+  return allPeople;
+}

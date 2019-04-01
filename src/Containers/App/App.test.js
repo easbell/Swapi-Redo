@@ -1,10 +1,10 @@
 import React from 'react';
 import { App, mapDispatchToProps, mapStateToProps } from './App';
-import { setVehicles, setFilm, setPlanets, setPeople } from '../actions';
-import { fetchFilm } from '../thunks/fetchFilm';
-import { fetchVehicles } from '../thunks/fetchVehicles';
-import { fetchPlanets } from '../thunks/fetchPlanets';
-import { fetchPeople } from '../thunks/peopleThunks/fetchPeople';
+import { setVehicles, setFilm, setPlanets, setPeople } from '../../actions';
+import { fetchFilm } from '../../thunks/fetchFilm';
+import { fetchVehicles } from '../../thunks/fetchVehicles';
+import { fetchPlanets } from '../../thunks/fetchPlanets';
+import { fetchPeople } from '../../thunks/peopleThunks/fetchPeople';
 import { shallow } from 'enzyme';
 
 describe('App', () => {
@@ -18,15 +18,6 @@ describe('App', () => {
 
   it('matches snapshot', () => {
     expect(wrapper).toMatchSnapshot();
-  });
-
-  it('matches snapshot with state', () => {
-    wrapper.setState({pageStatus: 'home'});
-    expect(wrapper).toMatchSnapshot();
-  })
-
-  it('should have default state', () => {
-    expect(wrapper.state('pageStatus')).toEqual('scroll');
   });
 
   describe('componentDidMount', () => {
@@ -43,15 +34,6 @@ describe('App', () => {
       instance.componentDidMount();
 
       expect(mockFn).toHaveBeenCalled();
-    });
-  });
-
-  describe('enterApp', () => {
-    it('should set state when enterApp is invoked', () => {
-      wrapper.setState({pageStatus: 'scroll'});
-      wrapper.instance().enterApp();
-
-      expect(wrapper.state('pageStatus')).toEqual('home');
     });
   });
 
