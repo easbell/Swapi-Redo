@@ -6,7 +6,6 @@ import './CardContainer.css';
 export const CardContainer = (props) =>{
   const renderCards = () => {
     const { category } = props;
-    console.log(props)
     return props[category].map(card => {
       return <Card key={card.Name} {...card}/>
     })

@@ -11,7 +11,6 @@ export const fetchPlanets = (url) => {
       }
       const data = await response.json();
       const cleanedPlanets = await cleanPlanets(data.results)
-      console.log(cleanedPlanets)
       dispatch(isLoading(false))
       dispatch(setPlanets(cleanedPlanets))
     } catch(error) {
